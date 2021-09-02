@@ -1,0 +1,8 @@
+[
+    {   
+        "pet_id": 1,
+        "pet_name": "Max",
+        "pet_photo": "http://placehold.it/100x100.png",
+        "pet_fact": "A dog’s nose print is unique, much like a person’s fingerprint"
+    }
+]
