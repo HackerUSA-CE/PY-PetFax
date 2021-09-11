@@ -10,5 +10,9 @@ def create_app():
     def index(): 
         return 'Hello, PetFax!'
 
+    # register pet blueprint 
+    from . import pet 
+    app.register_blueprint(pet.bp)
+
     # return the app 
     return app
