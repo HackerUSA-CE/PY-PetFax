@@ -14,10 +14,10 @@ def create_app():
     from . import pet
     app.register_blueprint(pet.bp)
 
+    # register fact blueprint 
+    # from . import facts
+    # app.register_blueprint(facts.bp)
 
     # return the app 
     return app
-
-
- 
 

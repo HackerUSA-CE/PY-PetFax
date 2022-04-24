@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetFax</title>
 </head>
+
+<style>
+    img {
+        text-align:center;
+    }
+</style>
+
 <body>
     <h1>Welcome to PetFax</h1>
     {% for pet in pets %}
-        <h2>{{ pet.pet_name }}</h2>
-        <img src = {{ pets.pet_photo }} alt ="Photo of pet"/>
+        <h2>{{pets.pet_id}}</h2>
+        <h2>{{ pets.pet_name }}</h2>
+        <img src = {{ pets.pet_photo }}/>
+        <h3>{{pets.pet_fact}}</h3>
     {% endfor %}
 </body>
 

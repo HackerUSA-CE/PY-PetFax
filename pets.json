@@ -1,16 +1,21 @@
 
 [
+
     {   
         "pet_id": 1,
         "pet_name": "Kiko",
-        "pet_photo": "https://bloximages.chicago2.vip.townnews.com/whiskers101.com/content/tncms/assets/v3/editorial/9/2e/92ebaac1-0e75-55b5-94ae-dab88cdfa277/602fed6b71b4c.image.jpg?resize=990%2C781",
+        "pet_photo":"https://raw.githubusercontent.com/HackerUSA-CE/petfax-app/main/assets/alvan-nee-ZCHj_2lJP00-unsplash.jpg?token=AGGJTZ5IZBINFYIOCE3C4JDBIJXEC",
         "pet_fact": "Some cats are ambidextrous, but 40% are either left- or right-pawed"
-    },{   
+    },
+    
+    {   
         "pet_id": 2,
         "pet_name": "Thumper",
         "pet_photo": "https://raw.githubusercontent.com/HackerUSA-CE/petfax-app/main/assets/emiliano-vittoriosi-3FSBkX4yG80-unsplash.jpg?token=AGGJTZ3XORYM6QENZVZU3PLBIJXGG",
         "pet_fact": "Rabbits have almost 360° vision but are born with their eyes shut"
-    },{   
+    },
+    
+    {   
         "pet_id": 3,
         "pet_name": "Max",
         "pet_photo": "https://raw.githubusercontent.com/HackerUSA-CE/petfax-app/main/assets/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg?token=AGGJTZZBBZGP6TBRXXCLNDLBIJXHU",
