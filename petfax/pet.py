@@ -1,3 +1,4 @@
+
 import json
 from flask import (Blueprint, render_template)
 
@@ -11,3 +12,4 @@ pets = json.load(open('pets.json'))
 @bp.route('/')
 def index():
     return render_template('./pets/index.html', pets=pets)
+
