@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFax | Pets</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <H1>PetFax</H1>
+        <div class="callout">
+            Welcome to PetFax! We are a no-kill shelter dedicated to finding our pets loving homes and educating the public with fun facts.
+        </div>
+        <div class="pets-container">
+            {% for pet in pets %}
+                <div class="pet">
+                    <H2>{{ pet.pet_name }}</H2>
+                    <img src="{{ url_for('static', filename='assets/') }}{{pet.pet_photo}}"/>
+                    <a href="/pets/{{ pet.pet_id }}">Learn more ⟩</a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="callout">
+            We'd love to learn more fun facts! <a href="/facts/new">Submit some here.</a>
+        </div>
+    </div>
+</body>
+</html>
