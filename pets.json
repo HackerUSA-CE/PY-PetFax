@@ -2,17 +2,17 @@
     {   
         "pet_id": 1,
         "pet_name": "Kiko",
-        "pet_photo": "https://raw.githubusercontent.com/HackerUSA-CE/petfax-app/main/assets/alvan-nee-ZCHj_2lJP00-unsplash.jpg?token=AGGJTZ5IZBINFYIOCE3C4JDBIJXEC",
+        "pet_photo": "alvan-nee-ZCHj_2lJP00-unsplash.jpg",
         "pet_fact": "Some cats are ambidextrous, but 40% are either left- or right-pawed"
     },{   
         "pet_id": 2,
         "pet_name": "Thumper",
-        "pet_photo": "https://raw.githubusercontent.com/HackerUSA-CE/petfax-app/main/assets/emiliano-vittoriosi-3FSBkX4yG80-unsplash.jpg?token=AGGJTZ3XORYM6QENZVZU3PLBIJXGG",
+        "pet_photo": "emiliano-vittoriosi-3FSBkX4yG80-unsplash.jpg",
         "pet_fact": "Rabbits have almost 360° vision but are born with their eyes shut"
     },{   
         "pet_id": 3,
         "pet_name": "Max",
-        "pet_photo": "https://raw.githubusercontent.com/HackerUSA-CE/petfax-app/main/assets/karsten-winegeart-5PVXkqt2s9k-unsplash.jpg?token=AGGJTZZBBZGP6TBRXXCLNDLBIJXHU",
+        "pet_photo": "karsten-winegeart-5PVXkqt2s9k-unsplash.jpg",
         "pet_fact": "A dog’s nose print is unique, much like a person’s fingerprint"
     }
 ]
