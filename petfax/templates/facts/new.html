@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Submit your facts</h1>
+            <div class="callout">
+                If you have experience faxing small animals, tell us about it!
+            </div>
+            <div class="facts-container">
+                <form method="POST">
+                    <label for="submitter"><h2>submitter</h2>
+                    </label>
+                    <input type="text" name="submitter">
+                    <br/>
+                    <label for="fact">
+                        <h2>Fact</h2>
+                    </label>
+                    <textarea name="fact" cols="30" rows="10">
+
+                    </textarea>
+                    <br/>
+                    <input type="button" value="Submit a Fact">
+                </form>
+            </div>
+            <a href="/pets">&lt;&lt; Go Back!!</a>
+        </div>
+    </body>
+</html>
