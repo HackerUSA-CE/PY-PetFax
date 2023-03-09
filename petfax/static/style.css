@@ -1,0 +1,14 @@
+body {
+    background-color: red;
+}
+{% else %}
+
+<div class="col-12 text-center">
+    <img
+      class="img-fluid"
+      src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2NjY2JkYjI4NzRmNjNmZDlkMDViZWE2ZGM0Mjg1ODhlNmE5OWZmMSZjdD1n/brHaCdJqCXijm/giphy.gif"
+    />
+    <h2>Search For A Player!</h2>
+  </div>
+</div>
+`   {% endif %}

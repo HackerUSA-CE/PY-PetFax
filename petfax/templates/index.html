@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Hello, adopt a pet!</h1>
+
+        {% for pet in pets %}
+            <h2>{{pet.pet_petname}}</h2>
+            <img src="{{pet.pet_photo}}" alt="Picture of {{pet.pet_name}}">
+
+        {% endfor%}
+        <script src="" async defer></script>
+    </body>
+</html>

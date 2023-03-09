@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>PetFax</h1>
+            <div class="callout">
+                Welcome to PetFax!! If you want to fax your pet somwhere, I got you!
+            </div>
+            <div class="pets-container">
+                <h1>Hello, adopt a pet!</h1>
+
+                {% for pet in pets %}
+                    <h2>{{pet.pet_petname}}</h2>
+                    <img src="{{pet.pet_photo}}" alt="Picture of {{pet.pet_name}}">
+                    <a href="/pets/{{ pet.pet_id }}">Learn more about {{pet.pet_name}}</a>
+        
+                {% endfor%}
+                
+            </div>
+            <div class="callout">
+                We want to know how you want your pets faxed
+                <a href="/facts/new">Submit a new fact!</a>
+            </div>
+        </div>
+    </body>
+</html>

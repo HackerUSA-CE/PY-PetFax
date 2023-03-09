@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>{{pet.pet_name}}</h1>
+            <div class="callout">
+                <span class="pet-fact-title">
+                    Did you know?
+                </span>
+                <br/>
+                {{pet.pet_fact}}
+            </div>
+            <div class="pets-container">
+                <div class="show-pet">
+                    <img src="{{ pet.pet_photo }}" alt="Photo of {{pet.pe_name}}">
+                </div>
+            </div>
+        </div>
+        <a href="/pets">&lt;&lt;Go Back</a>
+    </body>
+</html>
