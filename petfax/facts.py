@@ -1,12 +1,14 @@
-from flask import ( Blueprint, render_template )
+from flask import ( Blueprint, render_template, request )
 import json
 
 bp = Blueprint('facts', __name__, url_prefix='/facts')
 
-@bp.route('/')
+@bp.route('/', methods=['GET', 'POST'])
 def index():
-    return render_template('facts.html')
+    if request.method == 'POST':
+        return "Thanks for submitting a fun fact!"
+    return render_template('facts/index.html')
 
 @bp.route('/new')
 def new():
-    return render_template('new_form.html')
+    return render_template('facts/new.html')
