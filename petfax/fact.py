@@ -2,14 +2,13 @@ from flask import ( Blueprint, render_template, request, redirect )
 
 bp = Blueprint('fact', __name__, url_prefix="/facts")
 
-@bp.route('/', methods=['GET', 'POST'])
-def index(): 
-    if request.method == 'POST':
-        print(request.form)
-        return redirect('/facts')
-    
-    return render_template('facts/index.html')
-
-@bp.route('/new')
+@bp.route('/new', methods=['POST'])
 def new(): 
+    print(request.form["name"])
+    print(request.form["facts"])
+    return redirect('/facts')
+
+
+@bp.route('/')
+def index(): 
     return render_template('facts/new.html')
