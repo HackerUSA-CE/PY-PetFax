@@ -3,6 +3,8 @@ from flask import Flask
 def create_app():
     app = Flask(__name__, static_url_path='/static',static_folder='static')
 
+    app.config['TEMPLATES_AUTO_RELOAD'] = True
+
     @app.route('/')
     def index(): 
         return 'Hello, PetFax!' 
