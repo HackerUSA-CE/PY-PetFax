@@ -17,7 +17,7 @@
     </div>
     <div class="pets-container">
       <div class="show-pet">
-        <img src="{{ url_for('static', filename='assets/') }}{{ pet.pet_photo }}" />
+        <img src="{{ url_for('static', filename='assets/' + pet.pet_photo) }}" />
       </div>
     </div>
     <a href="/pets">⟨　Go back</a>
