@@ -1,0 +1,97 @@
+:root {
+  --light-accent: #c2c2c2;
+  --main-accent: #1c867e;
+  --second-accent: #dd4949;
+}
+
+body {
+  background: var(--light-accent);
+}
+
+.container {
+  width: 50%;
+  margin: 2em auto;
+  padding: 1em 3em 3em 3em;
+  border-radius: 1em;
+  background: white;
+  box-shadow: 2px 2px #ddd;
+}
+
+h1 {
+  margin: 0;
+  color: var(--main-accent);
+  font-size: 4em;
+  text-align: center;
+}
+
+h2 {
+  color: var(--second-accent);
+  margin: 0.5em 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-accent);
+}
+
+.callout {
+  background: #eee;
+  padding: 0.5em;
+  border-radius: 1em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.pets-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 1em 0;
+}
+
+.pets-container img {
+  width: 100%;
+  border-radius: 1em;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.pet {
+  width: 100%;
+  margin: 0 0.5em;
+}
+
+.facts-container {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 0.5em;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  border: none;
+  background: var(--second-accent);
+  font-size: 1em;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  padding: 0.5em;
+  transition-property: background;
+  transition-duration: 0.2s;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+  background: var(--main-accent);
+}
